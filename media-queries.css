@@ -1,5 +1,6 @@
 body {
     font-family: AppleGothic;
+
 }
 
 @media screen and (max-width: 499px) {
@@ -9,9 +10,61 @@ body {
         width: 850px;
         padding: 2em;
     }
-    h1 {
+    body {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1, .alert-info, .nav-links {
         text-align: center;
     }
+    h1 {
+        font-size: 50px;
+        margin: .2em 0;
+    }
+    .alert-info {
+        display: flex;
+        width: auto;
+        height: 3em;
+        background: hotpink;
+        border: 1px solid grey;
+    }
+    .alert-info a {
+        color: black;
+        text-decoration: none;
+        margin: auto;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
+    }
+    .nav-links li {
+        background: cornflowerblue;
+        padding: .5em;
+       margin: .5em 0;
+    }
+
+    .sub-section {
+    font-style: italic;
+
+    }
+    .header-img img {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+    }
+
 }
 @media screen and (min-width: 500px) {
 
@@ -45,7 +98,6 @@ body {
     h1 {
         display: inline-block;
         float: bottom;
-        font-family: AppleGothic;
         font-weight: bolder;
     }
 
@@ -78,6 +130,7 @@ body {
         float: right;
         width: 35%;
         order: 1;
+        font-style: italic;
     }
 
     i {
